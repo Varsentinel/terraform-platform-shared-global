@@ -1,4 +1,8 @@
 terraform {
+  backend "remote" {
+    organization = "Varsentinel"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
