@@ -7,4 +7,7 @@ locals {
     frontend-service     = { "name" = "frontend-service" },
     notification-service = { "name" = "notification-service" },
   }
+  tools_ecr = {
+    clerk = { "name" = "clerk" },
+  }
 }

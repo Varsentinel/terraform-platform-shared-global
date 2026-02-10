@@ -4,3 +4,10 @@ module "inventium_ecr" {
   name                 = "inventium/${each.value["name"]}"
   image_tag_mutability = "IMMUTABLE"
 }
+
+module "varsentinel_ecr" {
+  source               = "./module/ecr"
+  for_each             = local.tools_ecr
+  name                 = "varsentinel/${each.value["name"]}"
+  image_tag_mutability = "IMMUTABLE"
+}
