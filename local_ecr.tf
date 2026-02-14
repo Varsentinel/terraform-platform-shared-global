@@ -9,6 +9,7 @@ locals {
     notification-service          = { "name" = "notification-service" },
   }
   tools_ecr = {
-    clerk = { "name" = "clerk" },
+    clerk   = { "name" = "clerk" },
+    buildah = { "name" = "buildah" }
   }
 }
