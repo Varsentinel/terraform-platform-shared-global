@@ -7,6 +7,10 @@ locals {
     warehouse-service             = { "name" = "warehouse-service" },
     frontend-service              = { "name" = "frontend-service" },
     notification-service          = { "name" = "notification-service" },
+    order-service                 = { "name" = "order-service" },
+    recipe-service                = { "name" = "recipe-service" },
+    calculation-service           = { "name" = "calculation-service" }
+
   }
   tools_ecr = {
     clerk   = { "name" = "clerk" },
